@@ -1,0 +1,20 @@
+@use "general";
+
+// #logo{
+
+// }
+
+#hamburgerbutton {
+    height: 25px;
+    top: 5px;
+}
+
+header{
+    height: 100vh;
+    background-image: url(/Media/dough.jpeg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    img{
+        position: absolute;
+    }
+}
