@@ -9,7 +9,7 @@
     font-weight: bold;
 }
 
-.font-align{
+.text-center{
     text-align: center;
 }
 
@@ -18,9 +18,6 @@
     top: 3*$hamburger-height;
 }
 
-// the transform... is good because it is making the menu exactly half
-// if you didnt use this then it positions the left corner of obj to be at 50% which is still off a little
-// this function is saying keep the whole img at the halfway point from its center
 #hamburgerButton {
     height: 25px;
     top: 10px;
@@ -30,6 +27,11 @@
     height: 1.5*$hamburger-height;
     bottom: 10px;
 }
+
+// the transform... is good because it is making the menu exactly half
+// if you didnt use this then it positions the left corner of obj to be at 50% which is still off a little
+// this function is saying keep the whole img at the halfway point from its center
+// you need to specify position to use transform
 
 // boxshadow is the transparent black shading on picture
 header{
@@ -73,5 +75,20 @@ header{
         >a:visited, >a:link{
             color: black;
         }  
+    }
+}
+
+#events{
+    display: grid;
+    margin-top: 5vh;
+    div{
+        margin-top: 5vh;
+    }
+    #readMore{
+        width: 200px;
+        border: solid black 2px;
+        padding: 0.5em auto;
+        justify-self: center;
+        margin: 5vh;
     }
 }

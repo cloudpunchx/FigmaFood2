@@ -11,7 +11,7 @@
   font-weight: bold;
 }
 
-.font-align {
+.text-center {
   text-align: center;
 }
 
@@ -69,4 +69,19 @@ header div h1 {
 }
 #articles div > a:visited, #articles div > a:link {
   color: black;
+}
+
+#events {
+  display: grid;
+  margin-top: 5vh;
+}
+#events div {
+  margin-top: 5vh;
+}
+#events #readMore {
+  width: 200px;
+  border: solid black 2px;
+  padding: 0.5em auto;
+  justify-self: center;
+  margin: 5vh;
 }/*# sourceMappingURL=style.css.map */
