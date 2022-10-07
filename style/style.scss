@@ -1,20 +1,41 @@
 @use "general";
+@import "variable";
 
-// #logo{
-
-// }
-
-#hamburgerbutton {
-    height: 25px;
-    top: 5px;
+#logo{
+    width: 50vw;
+    top: 3*$hamburger-height;
 }
 
+// the transform... is good because it is making the menu exactly half
+// if you didnt use this then it positions the left corner of obj to be at 50% which is still off a little
+// this function is saying keep the whole img at the halfway point from its center
+#hamburgerButton {
+    height: 25px;
+    top: 10px;
+}
+
+#scrollArrow{
+    height: 1.5*$hamburger-height;
+    bottom: 10px;
+}
+
+// boxshadow is the transparent black shading on picture
 header{
     height: 100vh;
+    color: white;
     background-image: url(/Media/dough.jpeg);
     background-size: 100vw 100vh;
-    background-repeat: no-repeat;
-    img{
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.3);
+    img, div{
         position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    div{
+        top: 40%;
+        text-align: center;
+        h1{
+            margin-bottom: 1em;
+        }
     }
 }
