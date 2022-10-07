@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Playfair Display", serif;
 }
 
 .font-small {
@@ -84,4 +85,30 @@ header div h1 {
   padding: 0.5em auto;
   justify-self: center;
   margin: 5vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+#carousel {
+  position: relative;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+}
+#carousel img {
+  width: 100vw;
+}
+#carousel div {
+  position: absolute;
+  top: 0;
+  color: white;
+  font-size: 1.5em;
+}
+#carousel span {
+  font-style: italic;
+}
+
+#menu {
+  display: grid;
+  margin-top: 5vh;
+}
+#menu div {
+  margin-top: 5vh;
 }/*# sourceMappingURL=style.css.map */
