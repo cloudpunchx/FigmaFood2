@@ -1,6 +1,18 @@
 @use "general";
 @import "variable";
 
+.font-small{
+    font-size: $font-small;
+}
+
+.font-bold{
+    font-weight: bold;
+}
+
+.font-align{
+    text-align: center;
+}
+
 #logo{
     width: 50vw;
     top: 3*$hamburger-height;
@@ -33,9 +45,33 @@ header{
     }
     div{
         top: 40%;
-        text-align: center;
         h1{
             margin-bottom: 1em;
+            font-size: $font-large;
         }
+    }
+}
+
+#aboutUs{
+    height: $section-height;
+    span{
+        font-style: italic;
+    }
+}
+
+#articles{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    img{
+        width: 100%;
+    }
+    div{
+        >p:nth-child(2)
+        >p:nth-of-type(3){
+            font-size: 0.75em;
+        }  
+        >a:visited, >a:link{
+            color: black;
+        }  
     }
 }

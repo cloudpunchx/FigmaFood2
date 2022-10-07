@@ -3,6 +3,18 @@
   padding: 0;
 }
 
+.font-small {
+  font-size: 0.75rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-align {
+  text-align: center;
+}
+
 #logo {
   width: 50vw;
   top: 60px;
@@ -32,8 +44,29 @@ header img, header div {
 }
 header div {
   top: 40%;
-  text-align: center;
 }
 header div h1 {
   margin-bottom: 1em;
+  font-size: 2rem;
+}
+
+#aboutUs {
+  height: 50vh;
+}
+#aboutUs span {
+  font-style: italic;
+}
+
+#articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+#articles img {
+  width: 100%;
+}
+#articles div > p:nth-child(2) > p:nth-of-type(3) {
+  font-size: 0.75em;
+}
+#articles div > a:visited, #articles div > a:link {
+  color: black;
 }/*# sourceMappingURL=style.css.map */
